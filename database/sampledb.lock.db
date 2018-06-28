@@ -1,0 +1,6 @@
+#FileLock
+#Thu Jun 28 10:02:38 EEST 2018
+hostName=192.168.6.77
+id=1644533764c19ae2b6e87f390c034e2b1d4dc767f85
+method=file
+server=192.168.6.77\:55060
