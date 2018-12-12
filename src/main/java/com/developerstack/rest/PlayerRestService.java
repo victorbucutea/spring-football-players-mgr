@@ -2,8 +2,11 @@ package com.developerstack.rest;
 
 
 import com.developerstack.service.SoccerService;
+import org.apache.jasper.tagplugins.jstl.core.Url;
 import org.owasp.esapi.ESAPI;
 import org.owasp.esapi.errors.ValidationException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +24,8 @@ import static java.util.Arrays.asList;
 @RestController
 public class PlayerRestService {
 
+    Logger logger = LoggerFactory.getLogger(PlayerRestService.class);
+
 
     @Autowired
     private SoccerService service;
@@ -33,17 +38,18 @@ public class PlayerRestService {
 
     @RequestMapping(value = "/download", method = RequestMethod.GET)
     public StreamingResponseBody streamFile(@RequestParam("filename") String filename,
-                                            HttpServletResponse response) throws IOException, ValidationException {
+                                            HttpServletResponse response) throws IOException {
+        logger.info("Downloading file: "+filename);
 
-        filename = ESAPI.validator().getValidFileName("ctxt",filename,asList("jpg"),false);
         response.setContentType("image/jpeg");
         response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
 
 
-        String downloadFolder = "./src/main/webapp/ui/static/";
+        String downloadFolder = "/Users/victor/projects/craiova/spring-security-example/src/main/webapp/ui/static/";
 
 
-        InputStream inputStream = new FileInputStream(downloadFolder + filename);
+        InputStream inputStream = new URL("file://" + downloadFolder + filename).openStream();
+        // new FileInputStream(downloadFolder + filename);
 
         return outputStream -> {
             int nRead;

@@ -20,7 +20,7 @@ public class Player {
     @Column(name = "num")
     private int num;
 
-    @Column(name = "position")
+    @Column(name = "position",  length = 1000000)
     private String position;
 
     @Column(name = "image")
@@ -123,5 +123,10 @@ public class Player {
 
     public void setCards(Set<Card> cards) {
         this.cards = cards;
+    }
+
+    @Override
+    public String toString() {
+        return "{name: '"+name +"' , position: '"+position+"'}";
     }
 }

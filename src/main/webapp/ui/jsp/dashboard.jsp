@@ -50,6 +50,10 @@
         </script>
 
         <c:forEach var="user" items="${players}">
+
+            <script>
+                ${user.position} = 'position';
+            </script>
             <div class="row" style="border: 1px solid green; padding: 10px">
                 <div class="col-sm-2 text-center">
                     <div>
@@ -78,7 +82,6 @@
                 </div>
             </div>
         </c:forEach>
-
 
 
         <h3 class="mt-5">Add new player</h3>
