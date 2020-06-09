@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9616054b-d62f-475f-96cb-8286450d60b2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sampledb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/sampledb.trace.db" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1URJw95VrSWCNIcrSNkOpcThthb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/victor/projects/craiova/spring-security-example/src/main" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uploads" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploads" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/ui/jsp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/ui/static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploads" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/imgs" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/ui/static/assets" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/ui/static/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.developerstack.repository" />
+      <recent name="com.developerstack.rest" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.developerstack.model" />
+      <recent name="com.developerstack.rest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webappsecurity.Application" />
+      <module name="spring-security-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webappsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerRestService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webappsecurity.rest.PlayerRestService" />
+      <module name="spring-security-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webappsecurity.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webappsecurity.StaticCode" />
+      <module name="spring-security-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webappsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-security-example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webappsecurity.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.PlayerRestService" />
+      <item itemvalue="Application.StaticCode" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.StaticCode" />
+        <item itemvalue="Application.PlayerRestService" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9616054b-d62f-475f-96cb-8286450d60b2" name="Default" comment="" />
+      <created>1529954589544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529954589544</updated>
+      <workItem from="1529954592978" duration="747000" />
+      <workItem from="1529955393520" duration="18711000" />
+      <workItem from="1530034985104" duration="10125000" />
+      <workItem from="1530106353412" duration="2408000" />
+      <workItem from="1530169247690" duration="2959000" />
+      <workItem from="1544433815528" duration="9692000" />
+      <workItem from="1544626240080" duration="4890000" />
+      <workItem from="1575313711122" duration="1586000" />
+      <workItem from="1581583064623" duration="1510000" />
+      <workItem from="1589190545710" duration="513000" />
+      <workItem from="1591685769826" duration="6689000" />
+      <workItem from="1591708304421" duration="6217000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="562" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591701676262">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="562" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1591701676262" />
+    <state x="653" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1591709725894">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="653" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1591709725894" />
+    <state x="603" y="239" key="#xdebugger.evaluate" timestamp="1591713937406">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="603" y="239" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1591713937406" />
+    <state width="1638" height="354" key="GridCell.Tab.0.bottom" timestamp="1591716732785">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638264" />
+    <state width="1638" height="354" key="GridCell.Tab.0.bottom/0.23.1680.962@0.23.1680.962" timestamp="1591716732785" />
+    <state width="1638" height="354" key="GridCell.Tab.0.center" timestamp="1591716732784">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638263" />
+    <state width="1638" height="354" key="GridCell.Tab.0.center/0.23.1680.962@0.23.1680.962" timestamp="1591716732784" />
+    <state width="1638" height="354" key="GridCell.Tab.0.left" timestamp="1591716732783">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638262" />
+    <state width="1638" height="354" key="GridCell.Tab.0.left/0.23.1680.962@0.23.1680.962" timestamp="1591716732783" />
+    <state width="1638" height="354" key="GridCell.Tab.0.right" timestamp="1591716732785">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638263" />
+    <state width="1638" height="354" key="GridCell.Tab.0.right/0.23.1680.962@0.23.1680.962" timestamp="1591716732785" />
+    <state width="1638" height="354" key="GridCell.Tab.1.bottom" timestamp="1591716732792">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638267" />
+    <state width="1638" height="354" key="GridCell.Tab.1.bottom/0.23.1680.962@0.23.1680.962" timestamp="1591716732792" />
+    <state width="1638" height="354" key="GridCell.Tab.1.center" timestamp="1591716732787">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638265" />
+    <state width="1638" height="354" key="GridCell.Tab.1.center/0.23.1680.962@0.23.1680.962" timestamp="1591716732787" />
+    <state width="1638" height="354" key="GridCell.Tab.1.left" timestamp="1591716732786">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638265" />
+    <state width="1638" height="354" key="GridCell.Tab.1.left/0.23.1680.962@0.23.1680.962" timestamp="1591716732786" />
+    <state width="1638" height="354" key="GridCell.Tab.1.right" timestamp="1591716732792">
+      <screen x="0" y="23" width="1680" height="962" />
+    </state>
+    <state width="1638" height="354" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591716638266" />
+    <state width="1638" height="354" key="GridCell.Tab.1.right/0.23.1680.962@0.23.1680.962" timestamp="1591716732792" />
+    <state x="328" y="106" key="SettingsEditor" timestamp="1591685990288">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1591685990288" />
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591716767968">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591716767968" />
+    <state x="633" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591709442031">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="633" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1591709442031" />
+    <state x="541" y="280" width="598" height="490" key="find.popup" timestamp="1591702272016">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="541" y="280" width="598" height="490" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591702272016" />
+    <state x="574" y="230" width="670" height="738" key="search.everywhere.popup" timestamp="1591711117024">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="574" y="230" width="670" height="738" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591711117024" />
+    <state x="574" y="234" width="670" height="676" key="search.everywhere.popup/0.23.1680.962@0.23.1680.962" timestamp="1589191787632" />
+  </component>
+</project>
