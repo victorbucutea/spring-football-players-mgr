@@ -7,7 +7,7 @@
   
    <properties>
         <tomcat.version>8.5.3</tomcat.version>
-        <start-class>spring-boot-example.Application</start-class>
+        <start-class>com.webappsecurity.Application</start-class>
     </properties>
 
     <parent>

@@ -63,8 +63,12 @@
                         <a href="/download?filename=${user.image}">Download</a>
                     </div>
                 </div>
-                <div class="col-sm-2 text-center">${user.name}</div>
-                <div class="col-sm-1 text-center">${user.num}</div>
+                <div class="col-sm-2 text-center">
+                       <c:out value="${user.name}" />
+                </div>
+                <div class="col-sm-1 text-center">
+                        <c:out value="${user.num}" />
+               </div>
                 <div class="col-sm-2 text-center">${user.position}</div>
                 <div class="col-sm-1 text-center">
                     <c:forEach var="card" items="${user.cards}">
