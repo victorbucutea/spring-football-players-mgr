@@ -48,12 +48,12 @@
         </div>
         <script>
             window.players = [];
-            console.log(${players});
         </script>
 
         <c:forEach var="user" items="${players}">
 
 
+            <script> let user_${user.id} = '${user.position}' </script>
             <div class="row" style="border: 1px solid green; padding: 10px">
                 <div class="col-sm-2 text-center">
                     <div>
