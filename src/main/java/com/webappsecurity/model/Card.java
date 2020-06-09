@@ -1,4 +1,4 @@
-package com.developerstack.model;
+package com.webappsecurity.model;
 import javax.persistence.*;
 @Entity
 public class Card {

@@ -1,6 +1,6 @@
-package com.developerstack.repository;
+package com.webappsecurity.repository;
 
-import com.developerstack.model.Player;
+import com.webappsecurity.model.Player;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,9 @@
-package com.developerstack.controller;
+package com.webappsecurity.controller;
 
-import com.developerstack.model.Player;
-import com.developerstack.model.Vote;
-import com.developerstack.repository.VoteRepository;
-import com.developerstack.service.SoccerService;
+import com.webappsecurity.model.Player;
+import com.webappsecurity.model.Vote;
+import com.webappsecurity.repository.VoteRepository;
+import com.webappsecurity.service.SoccerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

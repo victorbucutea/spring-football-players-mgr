@@ -1,6 +1,6 @@
-package com.developerstack.repository;
+package com.webappsecurity.repository;
 
-import com.developerstack.model.Team;
+import com.webappsecurity.model.Team;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,11 @@
-package com.developerstack.model;
+package com.webappsecurity.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -79,8 +82,8 @@ public class Player {
         return image;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setImage(String image) throws UnsupportedEncodingException {
+        this.image = URLDecoder.decode(image, "UTF-8");
     }
 
     public Team getTeam() {
@@ -124,6 +127,7 @@ public class Player {
     public void setCards(Set<Card> cards) {
         this.cards = cards;
     }
+
 
     @Override
     public String toString() {

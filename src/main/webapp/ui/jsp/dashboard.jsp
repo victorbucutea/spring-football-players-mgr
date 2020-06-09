@@ -8,7 +8,7 @@
 </head>
 <body>
 <div>
-    <div class="container" style="margin: 50px">
+    <div class="container mt-4" >
         <div>
             <form action="/logout" method="post">
                 <button type="submit" class="btn btn-danger">Log Out</button>
@@ -16,7 +16,9 @@
                        value="${_csrf.token}"/>
             </form>
         </div>
-        <h3> Welcome, ${user}</h3>
+
+
+    <h3>  <a href="/dashboard" > Welcome, ${user} </a> </h3>
 
 
         <div id="topVotedPlayer" class="small text-secondary"></div>
@@ -51,13 +53,11 @@
 
         <c:forEach var="user" items="${players}">
 
-            <script>
-                ${user.position} = 'position';
-            </script>
+
             <div class="row" style="border: 1px solid green; padding: 10px">
                 <div class="col-sm-2 text-center">
                     <div>
-                        <img src="/${user.image}" width="80px">
+                        <img src=/image/${user.image} width="80px">
                     </div>
                     <div>
                         <a href="/download?filename=${user.image}">Download</a>
@@ -86,7 +86,7 @@
 
         <h3 class="mt-5">Add new player</h3>
         <div class="row">
-            <form class="form-inline" action="/dashboard" method="post">
+            <form class="form-inline"   enctype="multipart/form-data" action="/dashboard" method="post">
                 <label class="sr-only" for="inlineFormInputName2">Name</label>
                 <input name="name" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                        placeholder="Player name">
@@ -96,9 +96,10 @@
                        id="inlineFormInputGroupUsername2" placeholder="Position">
 
                 <label class="sr-only" for="number">number</label>
-                <input name="num" type="number" style="width:50px" class="form-control form-control mb-2 mr-sm-2"
+                <input name="num" type="number" style="width:60px" class="form-control mb-2 mr-sm-2"
                        id="number" placeholder="No">
 
+                <input type="file" name="file" class="form-control mb-2 mr-sm-2">
 
                 <select name="team" class="form-control mb-2 mr-sm-2" title="team">
                     <option selected>Selecteaza o echipa</option>

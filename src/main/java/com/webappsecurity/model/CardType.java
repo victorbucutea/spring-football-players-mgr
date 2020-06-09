@@ -1,4 +1,4 @@
-package com.developerstack.model;
+package com.webappsecurity.model;
 
 public enum CardType {
 
