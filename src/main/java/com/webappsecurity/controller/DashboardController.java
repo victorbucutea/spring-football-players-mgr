@@ -3,16 +3,17 @@ package com.webappsecurity.controller;
 import com.webappsecurity.model.Player;
 import com.webappsecurity.model.Team;
 import com.webappsecurity.service.SoccerService;
+import org.owasp.esapi.ESAPI;
 import org.owasp.esapi.errors.ValidationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -25,11 +26,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.util.Collection;
 
 @Controller
+@Transactional(rollbackFor = ValidationException.class)
 public class DashboardController {
 
     private static final Logger logger = LoggerFactory.getLogger(DashboardController.class);
@@ -47,12 +48,13 @@ public class DashboardController {
     }
 
     @RequestMapping(value = "/dashboard", method = RequestMethod.POST)
-    public ModelAndView add(Player p, @RequestParam("team") Long teamId, @RequestParam("file") MultipartFile file) throws IOException {
+    public ModelAndView add(Player p, @RequestParam("team") Long teamId, @RequestParam("file") MultipartFile file) throws IOException, ValidationException {
+        String fileName = file.getOriginalFilename();
+        p.setImage(fileName);
         Team team = service.getTeam(teamId);
         p.setTeam(team);
-        p.setImage(file.getOriginalFilename());
         service.addPlayer(p);
-        service.saveFile(file.getInputStream(), file.getOriginalFilename());
+        service.saveFile(file.getInputStream(), fileName);
         logger.info("Added player " + p.getName());
         return goToDashboard(true);
     }
@@ -61,16 +63,17 @@ public class DashboardController {
     @RequestMapping(value = "/download", method = RequestMethod.GET)
     public StreamingResponseBody streamFile(@RequestParam("filename") String filename,
                                             HttpServletResponse response) throws IOException, ValidationException {
-        logger.info("Downloading file: "+filename);
+        logger.info("Downloading file: " + filename);
 
         response.setContentType("image/jpeg");
         response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
 
-        String downloadFolder = "uploads";
 
-        java.io.File f = new java.io.File(downloadFolder, filename);
-         InputStream inputStream =  new FileInputStream(f);
-//        InputStream inputStream = new URL("file://" + downloadFolder + "/"+ filename).openStream();
+
+//        String downloadFolder = "uploads";
+//        java.io.File f = new java.io.File(downloadFolder, filename);
+        String downloadFolder = new File("uploads").getAbsolutePath();
+        InputStream inputStream = new URL("file://" + downloadFolder + "/"+ filename).openStream();
 
         return outputStream -> {
             int nRead;
@@ -86,10 +89,10 @@ public class DashboardController {
     @RequestMapping(value = "/image/{imageName}", method = RequestMethod.GET)
     @ResponseBody
     public byte[] getImage(@PathVariable(value = "imageName") String imageName) throws IOException {
-        File uploadedFile = new File("uploads", imageName  + ".jpg");
+        File uploadedFile = new File("uploads", imageName + ".jpg");
         if (!uploadedFile.exists()) {
             String realPath = context.getRealPath("ui/static");
-            uploadedFile = new File(realPath, imageName  + ".jpg");
+            uploadedFile = new File(realPath, imageName + ".jpg");
         }
 
         return Files.readAllBytes(uploadedFile.toPath());
