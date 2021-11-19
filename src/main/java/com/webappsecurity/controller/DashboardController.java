@@ -12,8 +12,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.crypto.codec.Base64;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StopWatch;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,12 +24,18 @@ import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBo
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
+import java.util.concurrent.ExecutionException;
 
 @Controller
 @Transactional(rollbackFor = ValidationException.class)
@@ -62,18 +70,24 @@ public class DashboardController {
 
     @RequestMapping(value = "/download", method = RequestMethod.GET)
     public StreamingResponseBody streamFile(@RequestParam("filename") String filename,
-                                            HttpServletResponse response) throws IOException, ValidationException {
+                                            HttpServletResponse response) throws IOException, ValidationException, URISyntaxException {
         logger.info("Downloading file: " + filename);
+
+        String newFile = ESAPI.encoder().canonicalize(filename);
+
+        if (filename.contains("..")) {
+            throw new IllegalStateException("asdas");
+        }
 
         response.setContentType("image/jpeg");
         response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
 
 
-
-//        String downloadFolder = "uploads";
-//        java.io.File f = new java.io.File(downloadFolder, filename);
         String downloadFolder = new File("uploads").getAbsolutePath();
-        InputStream inputStream = new URL("file://" + downloadFolder + "/"+ filename).openStream();
+//        Path uploads = Paths.get(new URI("file:///" + downloadFolder + "/" + filename));
+        Path uploads = Paths.get(downloadFolder, filename);
+
+        InputStream inputStream = Files.newInputStream(uploads);
 
         return outputStream -> {
             int nRead;
